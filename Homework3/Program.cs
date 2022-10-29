@@ -3,11 +3,16 @@ Console.WriteLine("Напишите цифру, соответствующую �
 
 int number = int.Parse(Console.ReadLine()!);
 
-if (number == 6 || number == 7)
+if (weekend(number))
 {
     Console.WriteLine("Да, Выходной");
 }
 else
 {
     Console.WriteLine("Нет");
+}
+
+bool weekend (int number)
+{
+    return number == 6 || number == 7;
 }
